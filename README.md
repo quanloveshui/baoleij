@@ -1,34 +1,34 @@
 """
-璇存槑锛?
+说明：
 
-瀹炵幇鍫″瀿鏈哄悗绔姛鑳?
-鐧诲綍鍫″瀿鏈哄悗鍚姩鑴氭湰python bin.py  run
-(濡傛灉鎯冲疄鐜扮敤鎴风櫥褰曞牎鍨掓満鍚庡氨鑷姩鎵ц鑴氭湰锛屽彲浠ュ湪鍫″瀿鏈虹敤鎴峰鐩綍涓嬬殑鏂囦欢涓坊鍔犳墽琛岃剼鏈懡浠ゅ嵆鍙?
-鍙婂湪/home/test/.bashrc涓柊澧瀙ython /opt/baoleiji/crazyeye_manager.py run鍗冲彲
+实现堡垒机后端功能
+登录堡垒机后启动脚本python bin.py  run
+(如果想实现用户登录堡垒机后就自动执行脚本，可以在堡垒机用户家目录下的文件中添加执行脚本命令即可
+及在/home/test/.bashrc中新增python /opt/baoleiji/crazyeye_manager.py run即可
 )
-鍙互鐪嬪埌璇ュ牎鍨掓満璐﹀彿鎺堟潈鐨勪富鏈哄垪琛?
-閫夋嫨涓绘満鍒楄〃杩炴帴杩滅▼涓绘満鍚庡嵆鍙墽琛屽懡浠?
+可以看到该堡垒机账号授权的主机列表
+选择主机列表连接远程主机后即可执行命令
 
 """
 
 
 
 
-鍚姩鑴氭湰
+启动脚本
 python bin.py  run
 
-鎵ц杩囩▼锛?
+执行过程：
 
 [root@master]# python bin.py  run   
 
 
-鍫″瀿鏈鸿处鍙?test
+堡垒机账号:test
 Password:123456
 Ready to print all the authorized hosts...to this user ...
 0.      192.168.149.129
 1.      192.168.149.128
 2.      192.168.149.127
-璇烽€夋嫨host>>:0
+请选择host>>:0
 going to logon  192.168.149.129
 *** Host key OK.
 *** Here we go!
@@ -36,9 +36,9 @@ going to logon  192.168.149.129
 Last login: Fri Apr 24 01:50:47 2020 from master
 [test@master ~]$
 
-宸茬粡鎴愬姛杩炴帴杩滅▼涓绘満鍙互鎵ц鍛戒护
+已经成功连接远程主机可以执行命令
 
-鎵ц杩囩殑鍛戒护浼氳褰曞湪ssh_test.log
+执行过的命令会记录在ssh_test.log
 2020-04-24 08:54:05   lll
 2020-04-24 08:54:06   ll
 2020-04-24 08:54:08   exit
