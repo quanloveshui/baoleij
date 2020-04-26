@@ -19,13 +19,13 @@ python bin.py  run
 
 执行过程：
 
-\[root@master]# python bin.py  run   
+[root@master]# python bin.py  run   
 
 
 堡垒机账号:test
 Password:123456
 Ready to print all the authorized hosts...to this user ...
-0.      192.168.149.129
+\0.      192.168.149.129
 1.      192.168.149.128
 2.      192.168.149.127
 请选择host>>:0
